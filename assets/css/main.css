@@ -1,0 +1,478 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  color: #222;
+}
+
+.navbar {
+  padding: 0.8rem;
+}
+
+.navbar-nav li {
+  padding-right: 20px;
+}
+
+.nav-link {
+  font-size: 1.1em !important;
+}
+
+a {
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.carousel-inner {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-caption h1 {
+  font-size: 500%;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 10px #000;
+}
+
+.carousel-caption h3 {
+  font-size: 200%;
+  font-weight: 500;
+  text-shadow: 1px 1px 10px #000;
+  padding-bottom: 1rem;
+}
+
+.btn-primary {
+  background-color: #6648b1;
+  border: 1px solid #563d7c;
+}
+
+.btn-primary:hover {
+  background-color: #563d7c;
+  border: 1px solid #563d7c;
+}
+
+.jumbotron {
+  padding: 1rem;
+  border-radius: 0;
+}
+
+.welcome {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.welcome hr {
+  border-top: 2px solid #b4b4b4;
+  width: 95%;
+  margin-top: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.fa-code {
+  color: #e54d26;
+}
+
+.fa-bold {
+  color: #563d7c;
+}
+
+.fa-css3 {
+  color: #2163af;
+}
+
+.fa-code,
+.fa-bold,
+.fa-css3 {
+  font-size: 4em;
+  margin: 1rem;
+}
+
+.fa-instagram {
+  color: #8a3ab9;
+}
+
+.fa-linkedin {
+  color: #0077b5;
+}
+
+.working-connect {
+  color: #fff;
+}
+
+.wk-h2 {
+  color: #fff;
+}
+
+/*  logos hover color*/
+
+.fa-instagram:hover,
+.fa-linkedin:hover,
+.fa-github:hover {
+  color: #d5d5d5;
+}
+
+/* icon */
+.icon-flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.icon-bottom {
+  position: relative;
+  top: -10px;
+}
+
+/* icon */
+
+/* content-text */
+
+.bg-color {
+  background-color: #ebedee;
+  padding: 5%;
+}
+
+.bg-color p {
+  text-align: center;
+}
+
+.bg-color h5 {
+  text-align: center;
+}
+
+.bg-center {
+  text-align: center;
+}
+
+.about-bg .btn-primary {
+  color: #000;
+  background: #fff;
+  border: none;
+}
+
+.about-bg .btn-primary:hover {
+  color: #fff;
+  background: #000;
+  border: none;
+}
+/*content-text */
+
+/* Social Media */
+.social-media-p {
+  background-color: greenyellow;
+  padding: 50px;
+  text-align: center;
+}
+
+/* Social Media */
+
+/* Work Team */
+
+.work-team {
+  margin-bottom: 50px;
+}
+
+.work-team-text {
+  margin-bottom: 50px;
+}
+
+/* Work Team */
+
+/* header */
+.header {
+  background-color: #000;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  width: 100%;
+  z-index: 3;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  
+}
+
+.logo-size{height: 51px; width: 77px;}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+  color: #fff;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: greenyellow;
+  color: #fff;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: 300ms all;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* header */
+
+/* PSG */
+
+.psg-margin {
+  margin-bottom: 50px;
+}
+
+.psg-text {
+  margin-top: 30px;
+}
+
+/* PSG */
+
+/* About us */
+
+.about-bg {
+  background: url(../img/adidasbg.jpg) no-repeat;
+  padding: 15%;
+  box-shadow: 0 0 8px 2px #282a2d;
+}
+
+.about-bg h2,
+p {
+  color: #000;
+  text-align: center;
+  font-weight: bold;
+}
+/* About us */
+
+/* footer */
+
+.footer-c {
+  text-align: center;
+  color: #000;
+}
+
+footer {
+  background-color: #fff;
+  color: #d5d5d5;
+  padding-top: 2rem;
+}
+
+hr.light {
+  border-top: 1px solid #d5d5d5;
+  width: 75%;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+footer a {
+  color: #000;
+}
+
+footer p {
+  color: #000;
+  font-weight: bold;
+}
+
+footer h5 {
+  color: #000;
+  font-weight: bold;
+}
+
+.fa-question {
+  color: #000;
+}
+
+.fa-shoe-prints {
+  color: #000;
+}
+
+hr.light-100 {
+  border-top: 1px solid #000;
+  width: 100%;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+/* footer */
+
+@media (max-width: 992px) {
+  .social a {
+    font-size: 4em;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-caption {
+    top: 45%;
+  }
+
+  .carousel-caption h1 {
+    font-size: 350%;
+  }
+
+  .carousel-caption h3 {
+    font-size: 140%;
+    font-weight: 400;
+
+    padding-bottom: 0.2rem;
+  }
+
+  .carousel-caption .btn {
+    font-size: 95%;
+    padding: 8px 14px;
+  }
+
+  .display-4 {
+    font-size: 200%;
+  }
+
+  .social a {
+    font-size: 2.5em;
+    padding: 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-caption {
+    top: 40%;
+  }
+
+  .carousel-caption h1 {
+    font-size: 250%;
+  }
+
+  .carousel-caption h3 {
+    font-size: 110%;
+  }
+
+  .carousel-caption .btn {
+    font-size: 90%;
+    padding: 4px 8px;
+  }
+
+  .carousel-indicators {
+    display: none;
+  }
+
+  .display-4 {
+    font-size: 160%;
+  }
+
+  .social a {
+    font-size: 2em;
+    padding: 0.7rem;
+  }
+}
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
